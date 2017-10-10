@@ -15,10 +15,10 @@ class Performance extends CI_Controller {
 		$data['weeknum'] = $weeknum;
 		$data['node_weekly_report'] = $this->model_mainkpis->region_weekly_report($weeknum);
 		$data['node_daily_report'] = $this->model_mainkpis->network_daily_report($weeknum);	
-		$this->load->view('view_header');
-		$this->load->view('view_nav',$data);
-		$this->load->view('view_mainkpis_chart',$data);
-		$this->load->view('view_mainkpis',$data);
+		#$this->load->view('view_header');
+		#$this->load->view('view_nav',$data);
+		#$this->load->view('view_mainkpis_chart',$data);
+		#$this->load->view('view_mainkpis',$data);
 	}
 	
 		public function other()
