@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html> 
+<head> 
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/js/themes/start/jquery-ui.custom.css"></link>     
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/js/jqgrid/css/ui.jqgrid.css"></link>     
+  
+    <script src="lib/js/jquery.min.js" type="text/javascript"></script> 
+    <script src="lib/js/jqgrid/js/i18n/grid.locale-en.js" type="text/javascript"></script> 
+    <script src="lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>     
+	<script src="lib/js/highcharts.js" type="text/javascript"></script>     
+	<script src="lib/js/jquery.highchartTable.js" type="text/javascript"></script>     
+    <script src="lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script> 
+	<script src="lib/js/bl.js" type="text/javascript"></script> 
+<title>Parameter List</title>
+	</head> 
+<body onload="updateControls()"> 
+
+
+<div id="container" style="width:100%;" align="center">
+	
+<form method="get" accept-charset="utf-8">
+	<font size="4" color="blue"><b>Network Type: </b></font>
+	<select name=networkType>
+		<option value="2G">2G</option>
+		<option selected value="3G">3G</option>
+		<option value="4G">4G</option>
+	</select>&nbsp;
+	
+	<font size="4" color="blue"><b>Cluster: </b></font>
+	<select name=cluster>
+		<option value="CO_RNCs">CO_RNCs</option>
+		<option selected value="DF_RNCs">DF_RNCs</option>
+	</select>&nbsp;
+	
+	<font size="4" color="blue"><b>Template: </b></font>
+	<select name=baselineRules>
+		<option selected value="RNCTemplate">RNC Template</option>
+		<option value="CellTemplate">Cell Template</option>
+	</select>&nbsp;
+
+	<input type="button" name="submit" value="Submit" onclick="onBaselineCheckClick();" />
+<br><br>
+<br>
+<br><br>
+	</form>
+	
+<img src="/npsmart/views/img/HUAWEI-LOGO.jpg" width="130" height="60" />
+
+	<table id="list2"></table>
+	
+<div id="pager2">
+
+</div>
+
+	<br> 
+    <br> 
+ </div> 
+ 
+ <div class="logFileName"></div>
+ <div class="hiddenTable" style="visibility:hidden; height: 10px;"></div>
+ <div class='bl_chart' style='width:1100px;'></div>
+
+</body> 
+</html> 
