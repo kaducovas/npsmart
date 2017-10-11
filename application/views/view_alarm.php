@@ -8,7 +8,7 @@ ini_set('memory_limit', '2048M');
  var element = "<?php echo $element; ?>";
 //alert(element)
  $(document).ready(function() {
-	 
+//teste	 
 
     $('#cfg').DataTable( {
         "iDisplayLength": 20,
