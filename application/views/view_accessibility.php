@@ -2,7 +2,8 @@
 		foreach($result as $row){
 			#$rnc = $row->rnc;
 			#$cellname =  $row->cellname;
-			#$cellid = $row->cellid;
+			#comentario#$cellid = $row->cellid;
+			
 			$datetime[] = $row->datetime;
 			$acc_rrc[] = $row->acc_rrc;	
 			$eff_cs[] = $row->eff_cs;	
