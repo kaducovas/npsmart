@@ -16,7 +16,7 @@ class performance extends CI_Controller {
 	{
 		$this->load->helper('form');
 		$this->load->model('teste');
-		
+		#teste
 		$data['result'] = $this->teste->query();
 		$this->load->view('view_home',$data);
 	}
