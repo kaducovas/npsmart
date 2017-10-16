@@ -589,9 +589,8 @@ function selectne_baseline(obj) {
 }
 
 function selectnenav_baseline(obj,type) {
-	//alert(type);
-	document.getElementById('reportmoname').value = reportmoname;
 	document.getElementById('reportdate').value = reportdate;
+	document.getElementById('reportmoname').value = reportmoname;
 	document.getElementById('reportnetype').value = type;
 	document.getElementById('reportkpi').value = reportkpi;
 	document.getElementById('reportnename').value = obj
